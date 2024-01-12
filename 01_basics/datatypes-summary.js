@@ -45,10 +45,33 @@ const myObj = {
     age: 22,
 }
 
-console.log(typeof myObj);
+// console.log(typeof myObj);
 
 const myFunction = function myFunction() {
     console.log("Hello World")
 }
 
-console.log(typeof myFunction)
+// console.log(typeof myFunction)
+
+
+//######################### MEMORY ##########################
+
+// Stack (Primitive), Heap (Non Primitive) 
+
+let admin = "Israfil"
+let admin1 = admin
+admin1 = "Alyssa"
+
+console.log(admin)
+console.log(admin1)
+
+const user1 = {
+    email: "user1@something.com",
+    uid: "324535234"
+}
+
+const user2 = user1
+user2.email = "user2@somthing.com" // This will also change user1.email value because they both containing same reference of value
+
+console.log(user1)
+console.log(user2)
