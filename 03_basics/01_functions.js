@@ -28,3 +28,5 @@ function anotherAddFunction(number1 = 0, number2 = 0) {
 }
 
 console.log(anotherAddFunction(10, 10))
+console.log(anotherAddFunction(10))
+console.log(anotherAddFunction())
