@@ -30,3 +30,11 @@ function anotherAddFunction(number1 = 0, number2 = 0) {
 console.log(anotherAddFunction(10, 10))
 console.log(anotherAddFunction(10))
 console.log(anotherAddFunction())
+
+
+// rest parameter
+function calculateCartItems(...nums) {
+    return nums
+}
+
+console.log(calculateCartItems(10, 40, 200, 130, 233))
