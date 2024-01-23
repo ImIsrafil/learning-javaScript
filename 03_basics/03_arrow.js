@@ -3,7 +3,14 @@ function virtualEnvironment() {
         console.log(this)
     }
 
+    regularFunction()
+
     const arrowFunction = () => {
         console.log(this)
     }
+
+    arrowFunction()
 }
+
+
+virtualEnvironment()
